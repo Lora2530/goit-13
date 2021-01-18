@@ -1,0 +1,117 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+// body
+body {
+    width: 100%;
+    max-width: 1500px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    text-align: center;
+
+    font-family:'Times New Roman', Times, serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+// standart margin remover
+h1, h2, h3, h4, h5, h6, ul, p, img {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+// list style remover
+ul {
+    list-style: none;
+}
+
+.section {
+    width: 100%;
+    max-width: 1500px;
+    padding: 50px 30px;
+    & :not(:last-child) {
+        margin-bottom: 50px;
+    }
+}
+
+.gallery {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 30px;
+    background-color: teal;
+    & :nth-child(-n + 8) {
+        margin-bottom: 30px;
+    }
+    & :nth-child(n + 9) {
+        margin-bottom: 0;
+    }
+}
+.button {
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    height: 30px;
+}
+
+.button.is-hidden {
+    display: none;
+    pointer-events: none;
+}
+.search-form {
+    display: inline-block;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 500px;
+    height: 70px;
+    padding: 15px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    outline: none;
+
+    font-size: 30px;
+}
+.photo-list-item {
+    width: 100%;
+    max-width: 250px;
+}
+
+.photo-card {
+    width: 100%;
+    max-width: 250px;
+}
+
+.card-image {
+    width: 100%;
+    max-width: 250px;
+    height: 200px;
+}
+
+.stats {
+    width: 100%;
+}
+
+.stats-item {
+    width: 100%;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.material-icons {
+    margin-right: 5px;
+}
